@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/edit"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgsua"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/nen"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nam"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        app:startIconDrawable="@drawable/name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTitle"
+            android:layout_width="302dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="35dp"
+
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_ed_titl"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        app:startIconDrawable="@drawable/name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content"
+        android:hint="Noi dung"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editContent"
+            android:layout_width="302dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="35dp"
+
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bntcant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="cant" />
+
+        <Button
+            android:id="@+id/bntoke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="oke" />
+    </LinearLayout>
+
+</LinearLayout>
